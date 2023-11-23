@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/hallowen.css">
+    <link rel="icon" href="./img/favicon.png">
+    <script src="./js/hallowen.js"></script>
+    <title>Hallowen</title>
+</head>
+<body>
+    <div id="scenario">
+        <img id="springtrap" src="./img/luffy.gif" alt="">
+        <img id="freddy" src="./img/freddy.gif" alt="">
+        <img id="girl" src="img/giphy.gif" alt="">
+
+        <audio id="screamspringtrap"><source src="./sound/fnaf-scream.mp3" type="audio/mp3"></audio>
+        <audio id="nosefreddy"><source src="./sound/freddys-nose.mp3" type="audio/mp3"></audio>
+        <audio id="guitarrasonido"><source src="./sound/guitarra.mp3" type="audio/mp3"></audio>
+        <audio id="sorbotaza"><source src="./sound/sorbocafe.mp3" type="audio/mp3"></audio>
+        <audio id="screamfreddy"><source src="./sound/screamfreddy.mp3" type="audio/mp3"></audio>
+        <audio id="screampayaso"><source src="./sound/ghoul-ghost-scares-169233.mp3" type="audio/mp3"></audio>
+        <div id="ventana" onclick="show('springtrap');play('screamspringtrap')" onmouseout="hide('springtrap');pause('screamspringtrap')"></div>
+        <div id="nariz"onclick="play('nosefreddy')"></div>
+        <div id="guitarra"onclick="play('guitarrasonido')"></div>
+        <div id="taza"onmouseover="play('sorbotaza')"></div>
+        <div id="basura" onmouseover="play('screampayaso')"></div>
+        <div id="textphoneguy"onmouseover="play('sorbotaza')">
+            <p>TRUCO O TRATO</p>
+        </div>
+        <div id="cuerpofreddy" onclick="show('freddy');play('screamfreddy')" onmouseout="hide('freddy');pause('screamfreddy')"></div>
+    </div>
+</body>
+</html>
